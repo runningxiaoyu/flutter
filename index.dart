@@ -1,5 +1,4 @@
 void main(List<String> args) {
-    var a = 1;
-    int b = 2;
-    print(a+b);
+   const double pi = 3.14;
+   print(pi);
 }
