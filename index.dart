@@ -1,0 +1,5 @@
+void main(List<String> args) {
+    var a = 1;
+    int b = 2;
+    print(a+b);
+}
