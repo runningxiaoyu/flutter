@@ -1,4 +1,10 @@
 void main(List<String> args) {
-   const double pi = 3.14;
-   print(pi);
+    String str1 = "hello";
+    String str2 = "world!!";
+    print("${str1.hashCode}");
+    print("${str2.hashCode}");
+    print(str1+str2);
+    print("$str1+$str2");
+    print(str1+str2);
+   
 }
