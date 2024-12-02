@@ -1,10 +1,9 @@
 void main(List<String> args) {
-    String str1 = "hello";
-    String str2 = "world!!";
-    print("${str1.hashCode}");
-    print("${str2.hashCode}");
-    print(str1+str2);
-    print("$str1+$str2");
-    print(str1+str2);
-   
+  var str = 3232;
+  if (str is String) {
+    print(str);
+  }else if (str is int) {
+    print(str);
+  }
 }
+
