@@ -1,9 +1,13 @@
 void main(List<String> args) {
-    var l1 =["障碍",20,true];
-    print(l1);
-    print(l1[0]);
-    print(l1[1]);
-    print(l1[2]);
-    print(l1.length);
-  var l2 = <String>["障碍", "20", "true"];  // All elements are now strings
+   var person = {
+      "name": "张三",
+      "age": 18
+   };
+   print(person["name"]);
+
+   var p = new Map();
+   p["name"] = "张三";
+   p["age"] = 18;
+   p["hobby"]=['篮球','足球'];
+   print(p["hobby"][1]);
 }
