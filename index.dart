@@ -1,17 +1,15 @@
 void main(List<String> args) {
-  List myList = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'];
-  print(myList);
-  print(myList.length);
-  print(myList.isEmpty);
-  print(myList.isNotEmpty);
-  print(myList.reversed);
-  var myNewList = myList.reversed.toList();
-  print(myNewList);
-  print(myList.first);
-  print(myList.last);
-  print(myList.indexOf('ae'));
-  print(myList.lastIndexOf('a'));
-  print(myList.sublist(2, 5));
-  myList.fillRange(0, 1, 'z');
-  print(myList);
+  // 打印所有传入的命令行参数
+  print('命令行参数列表：$args');
+  
+  // 如果需要使用整数，可以将字符串转换为整数
+  for (var arg in args) {
+    // 尝试将字符串转换为整数
+    try {
+      int number = int.parse(arg);
+      print('参数转换为数字: $number');
+    } catch (e) {
+      print('参数 $arg 不能转换为数字');
+    }
+  }
 }
