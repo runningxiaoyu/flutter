@@ -1,15 +1,16 @@
 void main(List<String> args) {
-  // 打印所有传入的命令行参数
-  print('命令行参数列表：$args');
-  
-  // 如果需要使用整数，可以将字符串转换为整数
-  for (var arg in args) {
-    // 尝试将字符串转换为整数
-    try {
-      int number = int.parse(arg);
-      print('参数转换为数字: $number');
-    } catch (e) {
-      print('参数 $arg 不能转换为数字');
-    }
-  }
+  Map person = {"name": "John Doe", "age": 30, "city": "New York"};
+  print(person["name"]);
+  print(person["age"]);
+  person.addAll({
+    'phone': '123-456-7890',
+    'work':['Developer', 'Designer', 'Manager']
+  });
+  print(person);
+  print(person.keys);
+  print(person.values);
+  print(person.containsKey('name'));
+  print(person.containsValue('John Doe'));
+  print(person.remove('name'));
+  print(person);
 }
