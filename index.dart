@@ -1,5 +1,8 @@
 void main(List<String> args) {
-    var a = 1;
-    int b = 2;
-    print(a+b);
+  for (int i = 0; i < 10; i++) {
+    if (i == 5) {
+      continue;
+    }
+    print(i);
+  }
 }
