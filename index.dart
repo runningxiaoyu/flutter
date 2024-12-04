@@ -1,5 +1,11 @@
 void main(List<String> args) {
-  for (var i = 0; i < 10; i++) {
+  var i = 1;
+  while (i <= 10) {
+    if (i == 4) {
+      continue;
+    }
     print(i);
+    i++;
+    
   }
 }
