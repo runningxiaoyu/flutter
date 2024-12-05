@@ -1,6 +1,23 @@
+int getNumber() {
+  return 10;
+}
+
+String getName() {
+  return "123";
+}
+
+List<String> getNames() {
+  return ["123", "456"];
+}
+Map<String, String> getMap() {
+  return {"123": "456"};
+}
+
 void main(List<String> args) {
-List numbers = [1, 2, 3];
-numbers.forEach((number) => print(number));
-Map scores = {'John': 90, 'Mary': 85};
-scores.forEach((k, v) => print('$k: $v'));
+  var n = getNumber();
+  print(n);
+  print(getName());
+  print(getNames());
+  print(getNames());
+  print(getMap());
 }
