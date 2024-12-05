@@ -3,8 +3,7 @@ void main(List<String> args) {
   print(userInfo);
 }
 
-String printUserInfo(String name, int age,
-    [String? gender, String? address, String nationality = '中国']) {
+String printUserInfo(String name, int age, [String? gender, String? address, String nationality = '中国'], {String hobby='编程', int salary=17000}) {
   var result = 'name: $name, age: $age, nationality: $nationality';
   if (gender != null) result += ', gender: $gender';
   if (address != null) result += ', address: $address';
