@@ -1,16 +1,6 @@
 void main(List<String> args) {
-  Map person = {"name": "John Doe", "age": 30, "city": "New York"};
-  print(person["name"]);
-  print(person["age"]);
-  person.addAll({
-    'phone': '123-456-7890',
-    'work':['Developer', 'Designer', 'Manager']
-  });
-  print(person);
-  print(person.keys);
-  print(person.values);
-  print(person.containsKey('name'));
-  print(person.containsValue('John Doe'));
-  print(person.remove('name'));
-  print(person);
+List numbers = [1, 2, 3];
+numbers.forEach((number) => print(number));
+Map scores = {'John': 90, 'Mary': 85};
+scores.forEach((k, v) => print('$k: $v'));
 }
