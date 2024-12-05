@@ -1,23 +1,10 @@
-int getNumber() {
-  return 10;
-}
-
-String getName() {
-  return "123";
-}
-
-List<String> getNames() {
-  return ["123", "456"];
-}
-Map<String, String> getMap() {
-  return {"123": "456"};
-}
-
 void main(List<String> args) {
-  var n = getNumber();
-  print(n);
-  print(getName());
-  print(getNames());
-  print(getNames());
-  print(getMap());
+  int sumNum(n) {
+    int sum = 0;
+    for (int i = 0; i <= n; i++) {
+      sum += i;
+    }
+    return sum;
+  }
+  print(sumNum(40)); //(40) ;
 }
