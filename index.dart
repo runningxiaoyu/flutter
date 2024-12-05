@@ -1,10 +1,8 @@
 void main(List<String> args) {
-  int sumNum(n) {
-    int sum = 0;
-    for (int i = 0; i <= n; i++) {
-      sum += i;
-    }
-    return sum;
-  }
-  print(sumNum(40)); //(40) ;
+ var  userInfo = printUserInfo('홍길동', 20);
+ print(userInfo);
+
+}
+String printUserInfo(String name, int age) {
+  return 'name: $name, age: $age';
 }
